@@ -9,7 +9,7 @@ const HeaderContent = ({ className }) => {
 	return (
 		<Link href="/">
 			<a className={className}>
-				<h2> CLUBESTAS </h2>
+				<h2> QUATRO LINHAS </h2>
 			</a>
 		</Link>
 	);

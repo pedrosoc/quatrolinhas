@@ -26,8 +26,6 @@ export default styled(Home)`
     align-items: center;
     margin: 0 auto;
 
-    height: 30vh;
-
 	@media only screen and (min-width: ${styles.breakpoint_medium}) {
         flex-direction: row;
     }

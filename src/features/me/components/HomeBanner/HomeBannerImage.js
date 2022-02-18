@@ -8,13 +8,13 @@ import { withTranslation } from "@i18n";
 import images from "@/constants/images";
 
 const HomeBannerImage = ({ className, t }) => {
-	/*return (
-		<img
-			src={images.newLogo}
+	return (
+		<div
+			style={{ backgroundImage: `url("${images.background}`}}
 			alt={t("home.altImage")}
 			className={className}
 		/>
-	);*/
+	);
     return null;
 };
 
@@ -24,6 +24,8 @@ HomeBannerImage.propTypes = {
 };
 
 export default withTranslation("common")(styled(HomeBannerImage)`
-	min-width: 250px;
-	max-width: 50%;
+	width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
 `);

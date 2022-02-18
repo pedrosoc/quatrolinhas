@@ -6,7 +6,7 @@ export default [
     },
     {
         id: "-MQ2pYn_oURTh4tcbVj4",
-        name: "Coluna do Clubestas",
+        name: "Coluna do Quatro Linhas",
         route: "/coluna-clubestas"
     }
 ];

@@ -7,7 +7,7 @@ const ContentCardInfoHeader = ({ className, title, episode }) => {
 	return (
 		<div className={className}>
 			<h3>{title}</h3>
-			{episode ? <span> Clubestas #{episode} </span> : ""}
+			{episode ? <span> Quatro Linhas #{episode} </span> : ""}
 		</div>
 	);
 }

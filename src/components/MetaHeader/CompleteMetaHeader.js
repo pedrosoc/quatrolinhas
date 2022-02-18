@@ -43,7 +43,7 @@ const CompleteMetaHeader = ({ t, meta, content }) => (
         <meta property="og:image" content={meta.image(content)} />
         <meta property="og:image:alt" content={meta.title(t, content)} />
         <meta property="og:locale" content="pt_BR" />
-        <meta property="og:site_name" content="Clubestas" />
+        <meta property="og:site_name" content="Quatro Linhas" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />

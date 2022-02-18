@@ -24,7 +24,7 @@ const Home = ({ t, contents, categories }) => {
 			<MetaHeader meta={routes.home.meta} />
             <Header categories={categories} social={social} />
 
-			<Section first backgroundImage={images.background}>
+			<Section first>
 				<HomeBanner />
 			</Section>
 

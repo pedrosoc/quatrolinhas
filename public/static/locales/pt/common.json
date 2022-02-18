@@ -4,50 +4,50 @@
         "closeSymbol": "X",
         "home": "Início",
         "about": "Sobre",
-        "social": "Acompanhe o Clubestas em:"
+        "social": "Acompanhe o Quatro Linhas em:"
     },
     "footer": {
-        "copyright": "© Copyright 2020",
-        "title": "Clubestas - Futebol é vida, clubismo religião."
+        "copyright": "© Copyright 2022",
+        "title": "Quatro Linhas - Campinas"
     },
     "home": {
-        "title": "CLUBESTAS",
-        "subtitle": "FUTEBOL É VIDA, CLUBISMO RELIGIÃO",
-        "altImage": "Logo - Clubestas",
+        "title": "QUATRO LINHAS",
+        "subtitle": "CAMPINAS",
+        "altImage": "Logo - Quatro Linhas",
         "meta": {
-            "title": "Clubestas",
-            "description": "Apaixonados por futebol e clubistas acima de tudo. Um canal de resenhas, discussões e análises sobre o futebol brasileiro e internacional.",
-            "keywords": "Clubestas, Clubismo, Futebol, Resenhas, Bola, Análises"
+            "title": "Quatro Linhas",
+            "description": "-",
+            "keywords": "Campinas, Resenha, Quatro, Linhas, Amigos"
         }
     },
     "about": {
         "title": "Sobre o projeto",
-        "description": "Nascido em 2019, o projeto de um podcast criado por pontepretanos para pontepretanos tem um objetivo primordial claro: resgatar o interesse dos torcedores e torcedoras pelo clube, com informações quentes, com opiniões isentas e contundentes, com histórias sobre o seu passado e reforçar a identidade da Ponte Preta. O dia a dia do clube, pós e pré-jogo, entrevistas exclusivas com jogadores que marcaram seu nome em nossa história e até bastidores políticos. O Macacast é a voz do pontepretano das arquibancadas na internet.",
+        "description": "-",
         "help": {
             "title": "Ajude o projeto",
-            "description": "Se você curte o nosso trabalho, não deixe de nos prestigiar e ajude a melhorar ainda mais a qualidade do seu podcast preferido e a sua experiência como ouvinte. Fazemos o Macacast com muita paixão e, com as doações, podemos fazer ainda melhor e nos dedicar ainda mais ao projeto. O valor será investido na melhoria de materiais, como a compra de microfones para os membros, pagamento de servidores, gravações, e manutenção de outras estruturas.",
+            "description": "-",
             "link": {
                 "description": "Você pode fazer a sua doação de duas formas:",
                 "monthly": "Mensalmente:",
-                "monthlyLink": "apoia.se/macacast",
+                "monthlyLink": "apoia.se/quatrolinhas",
                 "single": "Avulsa:",
-                "singleLink": "apoia.se/ajudeomacacast"
+                "singleLink": "apoia.se/quatrolinhas"
             },
-            "sponsorTitle": "Anuncie no Clubestas",
-            "sponsor": "Se você deseja ser um parceiro do projeto, entre em contato conosco por meio de nossas plataformas digitais. Temos certeza de que, com a audiência que temos, a parceria renderá muitos frutos para sua empresa."
+            "sponsorTitle": "Anuncie no Quatro Linhas",
+            "sponsor": "-"
         },
         "meta": {
-            "title": "Sobre | Clubestas",
-            "description": "O podcast da maior do Interior. Pré-jogo, Pós-jogo, Resenhas, Entrevistas e muito mais da Ponte Preta, a nossa macaca querida de Campinas.",
-            "keywords": "Ponte Preta, Podcast, Campinas, Ponte, Macaca, Maior do Interior, Entrevista, Resenha"
+            "title": "Sobre | Quatro Linhas",
+            "description": "-",
+            "keywords": "Campinas, Resenha, Quatro, Linhas, Amigos"
         }
     },
     "contentPost": {
         "avaiableFor": "Disponível também em:",
         "meta": {
-            "title": "{{title}} | Clubestas",
+            "title": "{{title}} | Quatro Linhas",
             "description": "{{description}}",
-            "keywords": "Ponte Preta, Podcast, Noticias, Campinas, Ponte, Macaca, Maior do Interior, Entrevista, Resenha"
+            "keywords": "Campinas, Resenha, Quatro, Linhas, Amigos"
         }
     },
     "content": {
@@ -57,16 +57,16 @@
         "anotherEpisodes": "Outras publicações",
         "emptyCategory": "Ainda não temos nenhum conteúdo para essa categoria :(",
         "meta": {
-            "title": "{{name}} | Clubestas",
+            "title": "{{name}} | Quatro Linhas",
             "description": "{{description}}",
-            "keywords": "Ponte Preta, Podcast, Noticias, Campinas, Ponte, Macaca, Maior do Interior, Entrevista, Resenha"
+            "keywords": "Campinas, Resenha, Quatro, Linhas, Amigos"
         }
     },
     "error": {
         "title": "Página não encontrada",
         "description": "A página que você está procurando não existe :(",
         "meta": {
-            "title": "Página não encontrada | Clubestas"
+            "title": "Página não encontrada | Quatro Linhas"
         }
     }
 }
