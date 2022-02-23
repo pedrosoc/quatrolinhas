@@ -13,14 +13,14 @@ export default [
 	},*/
 	{
 		name: "instagram",
-		url: "https://www.instagram.com/clubestas"
+		url: "https://www.instagram.com/quatrolinhas"
 	},
 	{
 		name: "twitter",
-		url: "https://twitter.com/clubestas"
+		url: "https://twitter.com/quatrolinhas"
 	},
 	/*{
 		name: "twitch",
-		url: "https://www.twitch.tv/clubestas"
+		url: "https://www.twitch.tv/quatrolinhas"
 	},*/
 ];

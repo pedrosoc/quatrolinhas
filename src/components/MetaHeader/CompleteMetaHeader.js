@@ -47,8 +47,8 @@ const CompleteMetaHeader = ({ t, meta, content }) => (
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@clubestas" />
-        <meta name="twitter:creator" content="@clubestas" />
+        <meta name="twitter:site" content="@quatrolinhas" />
+        <meta name="twitter:creator" content="@quatrolinhas" />
         <meta name="twitter:title" content={meta.title(t, content)} />
         <meta name="twitter:description" content={meta.description(t, content)} />
         <meta name="twitter:image" content={meta.image(content)} />

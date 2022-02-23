@@ -13,7 +13,11 @@ const styles = {
     
 	container_margin_large: "64px",
 	container_margin_medium: "32px",
-	container_margin_small: "24px"
+	container_margin_small: "24px",
+
+    primary_color: "#fff",
+    secondary_color: "#2464bd",
+    tertiary_color: "#18191b",
 };
 
 export default styles;

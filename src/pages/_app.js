@@ -7,6 +7,8 @@ import GlobalStyle from "@global-style";
 import { appWithTranslation } from "@i18n";
 import { initGA, logEvent, logPageView } from "@/utils/analytics";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 const MyApp = ({ Component, pageProps }) => {
     const router = useRouter()
 

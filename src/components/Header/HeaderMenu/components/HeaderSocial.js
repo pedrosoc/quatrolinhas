@@ -21,7 +21,7 @@ const HeaderSocial = ({ className, t, social }) => {
 			uuid="header"
 			size={isMobile ? "40" : "30"}
 			distance="9px"
-			fill="#000000"
+			fill={styles.primary_color}
 			socialList={social}
 		/>
 	);

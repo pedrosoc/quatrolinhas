@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import HeaderContainer from "./HeaderContainer";
 import HeaderLogo from "./HeaderLogo";
 import HeaderMenu from "./HeaderMenu";
+import styles from "@/constants/styles";
 
 const Header = ({ className, social, categories }) => {
 	return (
@@ -27,4 +28,6 @@ Header.propTypes = {
 export default styled(Header)`
 	font-family: "Poppins", sans-serif;
 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    background-color: ${styles.secondary_color};
+    color: ${styles.primary_color};
 `;

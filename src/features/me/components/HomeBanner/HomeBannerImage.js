@@ -6,16 +6,36 @@ import PropTypes from "prop-types";
 import { withTranslation } from "@i18n";
 
 import images from "@/constants/images";
+import { Carousel } from "react-responsive-carousel";
 
 const HomeBannerImage = ({ className, t }) => {
-	return (
-		<div
-			style={{ backgroundImage: `url("${images.background}`}}
-			alt={t("home.altImage")}
-			className={className}
-		/>
-	);
-    return null;
+	// return (
+	// 	<div
+	// 		style={{ backgroundImage: `url("${images.background}`}}
+	// 		alt={t("home.altImage")}
+	// 		className={className}
+	// 	/>
+	// );
+    return (
+        <Carousel className={className} autoPlay infiniteLoop showArrows showStatus={false} showThumbs={false}>
+            <div>
+                <div className="carousel-item" style={{ backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 21, 68, 0) 60%), url("${images.background}")`}} />
+                <p className="legend">Futebol e Campinas: A relação de ouro</p>
+            </div>
+            <div>
+                <div className="carousel-item" style={{ backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 21, 68, 0) 60%), url("https://http2.mlstatic.com/D_NQ_NP_657068-MLB40733214303_022020-O.jpg")`}} />
+                <p className="legend">Paisagens de Campinas</p>
+            </div>
+            <div>
+                <div className="carousel-item" style={{ backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 21, 68, 0) 60%), url("https://s2.glbimg.com/WPngOimB9f_97VJSUm_tkHoMo48=/0x115:1025x769/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/j/V/86NwLjT16rx5BUStaUcg/trezedemaio-centro-campinas.jpeg")`}} />
+                <p className="legend">O centro de Campinas</p>
+            </div>
+            <div>
+                <div className="carousel-item" style={{ backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 21, 68, 0) 60%), url("https://www.livehere.com.br/blog/wp-content/uploads/2019/05/morar-em-campinas-990x556.jpg")`}} />
+                <p className="legend">Campinas vista de cima</p>
+            </div>
+        </Carousel>
+    );
 };
 
 HomeBannerImage.propTypes = {
@@ -25,7 +45,20 @@ HomeBannerImage.propTypes = {
 
 export default withTranslation("common")(styled(HomeBannerImage)`
 	width: 100%;
-    height: 500px;
-    background-size: cover;
-    background-position: center;
+    
+    & .carousel-item {
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    & .slide .legend {
+        font-family: "Poppins",sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        opacity: 1;
+        background: transparent;
+    }
+
 `);
