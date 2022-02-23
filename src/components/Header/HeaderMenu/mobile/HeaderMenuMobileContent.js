@@ -14,7 +14,7 @@ const HeaderMenuMobile = ({ className, closeModal, social, contents }) => {
 		<div className={className}>
 			<HeaderMenuMobileTitle closeModal={closeModal} />
 			<HeaderItems closeModal={closeModal} contents={contents} />
-			<HeaderSocial social={social} />
+			<HeaderSocial social={social} fill={styles.tertiary_color} />
 		</div>
 	);
 };
@@ -32,4 +32,9 @@ export default styled(HeaderMenuMobile)`
 	padding: 0 ${styles.container_margin_medium};
 
     background-color: #fff;
+    color: ${styles.tertiary_color} !important;
+    
+    & a {
+        color: ${styles.tertiary_color} !important;
+    }
 `;

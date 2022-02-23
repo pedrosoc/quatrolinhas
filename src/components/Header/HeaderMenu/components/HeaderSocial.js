@@ -9,7 +9,7 @@ import { withTranslation } from "@i18n";
 import SocialIcons from "@/components/SocialIcons";
 import styles from "@/constants/styles";
 
-const HeaderSocial = ({ className, t, social }) => {
+const HeaderSocial = ({ className, t, social, fill }) => {
 	const isMobile = useMediaQuery({
 		query: `(max-device-width: ${styles.breakpoint_large_max})`
 	});
@@ -21,7 +21,7 @@ const HeaderSocial = ({ className, t, social }) => {
 			uuid="header"
 			size={isMobile ? "40" : "30"}
 			distance="9px"
-			fill={styles.primary_color}
+			fill={fill ? fill : styles.primary_color}
 			socialList={social}
 		/>
 	);
@@ -30,7 +30,8 @@ const HeaderSocial = ({ className, t, social }) => {
 HeaderSocial.propTypes = {
 	className: PropTypes.string,
 	t: PropTypes.func,
-	social: PropTypes.array
+	social: PropTypes.array,
+	fill: PropTypes.string
 };
 
 export default withTranslation("common")(styled(HeaderSocial)`
