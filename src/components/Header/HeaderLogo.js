@@ -10,8 +10,12 @@ const HeaderContent = ({ className }) => {
 	return (
 		<Link href="/">
 			<a className={className}>
-				<h2> QUATRO LINHAS </h2>
-			</a>
+				<h1> 4 </h1>
+                <div>
+                    <h3 className="linhas"> LINHAS </h3>
+                    <h3 className="campinas"> CAMPINAS </h3>
+                </div>
+            </a>
 		</Link>
 	);
 };
@@ -23,4 +27,22 @@ HeaderContent.propTypes = {
 export default styled(HeaderContent)`
 	color: ${styles.primary_color};
 	text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    & h1 {
+        font-size: 48px;
+        margin-right: 5px;
+    }
+    
+    & .linhas {
+        position: relative;
+        top: 4px;
+    }
+    
+    & .campinas {
+        position: relative;
+        top: -4px;
+    }
 `;

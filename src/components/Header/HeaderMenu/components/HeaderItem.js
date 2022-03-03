@@ -26,11 +26,11 @@ export default styled(HeaderItem)`
 	text-decoration: none;
     color: ${styles.primary_color};
 	font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
-	@media only screen and (min-width: ${styles.breakpoint_large}) {
+	/* @media only screen and (min-width: ${styles.breakpoint_large}) {
         margin-bottom: 0;
         margin-right: 30px;
         height: fit-content;
-	}
+	} */
 `;

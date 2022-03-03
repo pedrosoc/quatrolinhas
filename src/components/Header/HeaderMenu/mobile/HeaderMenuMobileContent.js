@@ -14,7 +14,7 @@ const HeaderMenuMobile = ({ className, closeModal, social, contents }) => {
 		<div className={className}>
 			<HeaderMenuMobileTitle closeModal={closeModal} />
 			<HeaderItems closeModal={closeModal} contents={contents} />
-			<HeaderSocial social={social} fill={styles.tertiary_color} />
+			{/* <HeaderSocial social={social} fill={styles.tertiary_color} /> */}
 		</div>
 	);
 };

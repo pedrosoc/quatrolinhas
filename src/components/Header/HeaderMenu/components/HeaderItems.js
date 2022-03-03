@@ -31,11 +31,11 @@ export default withTranslation("common")(styled(HeaderItems)`
 	flex-direction: column;
 	padding-top: ${styles.container_margin_medium};
 
-	@media only screen and (min-width: ${styles.breakpoint_large}) {
+	/* @media only screen and (min-width: ${styles.breakpoint_large}) {
 		flex-direction: row;
 		border-right: 2px solid ${styles.primary_color};
 
 		margin: 0;
 		padding-top: 0;
-	}
+	} */
 `);

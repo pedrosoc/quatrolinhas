@@ -11,7 +11,7 @@ const HeaderMenuMobileTitle = ({ className, t, closeModal }) => {
 	return (
 		<div className={className}>
 			<h4>{t("header.title")}</h4>
-			<SVG onClick={closeModal} name="close" width="15" />
+			<SVG onClick={closeModal} style={{cursor: "pointer"}} name="close" width="15" />
 		</div>
 	);
 };
