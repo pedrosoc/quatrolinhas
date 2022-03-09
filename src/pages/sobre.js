@@ -16,6 +16,7 @@ import social from "@/features/me/constants/social";
 import api from "@api";
 import UserProfile from "@/features/profile/components/UserProfile";
 import styles from "@/constants/styles";
+import authors from "@/constants/authors";
 
 const About = ({ className, t, categories }) => {
 	return (
@@ -30,30 +31,14 @@ const About = ({ className, t, categories }) => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur porttitor erat ut tincidunt. Nam velit orci, aliquet eu tempor a, porttitor mattis lectus. Fusce et urna luctus, ultrices purus id, imperdiet erat. Suspendisse fringilla varius nunc eget luctus. Donec elementum imperdiet est et gravida. Duis ut pulvinar ligula. Sed ullamcorper neque elit, nec lacinia quam tempor nec. Nullam mollis pharetra ullamcorper. Nam vel neque sit amet justo volutpat tincidunt. Etiam egestas varius nibh eget dapibus. Curabitur finibus urna lacus, quis volutpat odio vestibulum eget. Quisque sit amet augue nisi. Proin malesuada finibus nunc, a eleifend sem dictum eu.</p>
                         <h4>Escritores</h4>
                         <div className="profiles">
-                            <UserProfile
-                                dark
-                                name="Israel Moreira"
-                                description="Metalúrgico por Profissão, um eterno aluno das Ciências Sociais e apaixonado por rádio 📻"
-                                photo="https://firebasestorage.googleapis.com/v0/b/clubestas.appspot.com/o/autores%2FWhatsApp%20Image%202022-03-01%20at%2022.35.05.jpeg?alt=media&token=d66ff817-3040-4bb8-9b26-f685f3c7688e"
-                            />
-                            <UserProfile
-                                dark
-                                name="Israel Moreira"
-                                description="Metalúrgico por Profissão, um eterno aluno das Ciências Sociais e apaixonado por rádio 📻"
-                                photo="https://firebasestorage.googleapis.com/v0/b/clubestas.appspot.com/o/autores%2FWhatsApp%20Image%202022-03-01%20at%2022.35.05.jpeg?alt=media&token=d66ff817-3040-4bb8-9b26-f685f3c7688e"
-                            />
-                            <UserProfile
-                                dark
-                                name="Israel Moreira"
-                                description="Metalúrgico por Profissão, um eterno aluno das Ciências Sociais e apaixonado por rádio 📻"
-                                photo="https://firebasestorage.googleapis.com/v0/b/clubestas.appspot.com/o/autores%2FWhatsApp%20Image%202022-03-01%20at%2022.35.05.jpeg?alt=media&token=d66ff817-3040-4bb8-9b26-f685f3c7688e"
-                            />
-                            <UserProfile
-                                dark
-                                name="Israel Moreira"
-                                description="Metalúrgico por Profissão, um eterno aluno das Ciências Sociais e apaixonado por rádio 📻"
-                                photo="https://firebasestorage.googleapis.com/v0/b/clubestas.appspot.com/o/autores%2FWhatsApp%20Image%202022-03-01%20at%2022.35.05.jpeg?alt=media&token=d66ff817-3040-4bb8-9b26-f685f3c7688e"
-                            />
+                            {Object.keys(authors).map(a => (
+                                <UserProfile
+                                    dark
+                                    name={authors[a].name}
+                                    description={authors[a].description}
+                                    photo={authors[a].img}
+                                />
+                            ))}
                         </div>
 					</div>
 				</div>

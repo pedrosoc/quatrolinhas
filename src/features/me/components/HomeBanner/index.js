@@ -8,16 +8,17 @@ import styles from "@/constants/styles";
 import HomeBannerImage from "./HomeBannerImage";
 import HomeBannerTitle from "./HomeBannerTitle";
 
-const Home = ({ className }) => {
+const Home = ({ className, destaks }) => {
 	return (
 		<div className={className}>
-			<HomeBannerImage />
+			<HomeBannerImage destaks={destaks} />
 		</div>
 	);
 };
 
 Home.propTypes = {
-	className: PropTypes.string
+	className: PropTypes.string,
+    destaks: PropTypes.array
 };
 
 export default styled(Home)`

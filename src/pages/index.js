@@ -19,14 +19,14 @@ import contentsStatus from "@/constants/contentsStatus";
 import images from "@/constants/images";
 import styles from "@/constants/styles";
 
-const Home = ({ t, contents, categories }) => {
+const Home = ({ t, contents, categories, destaks }) => {
     return (
 		<Fragment>
 			<MetaHeader meta={routes.home.meta} />
             <Header categories={categories} social={social} />
 
 			<Section first colored={styles.tertiary_color}>
-				<HomeBanner />
+				<HomeBanner destaks={destaks} />
 			</Section>
 
 			<Section>
@@ -42,6 +42,7 @@ Home.propTypes = {
 	t: PropTypes.func,
 	contents: PropTypes.array,
 	categories: PropTypes.array,
+	destaks: PropTypes.array,
 };
 
 export const getStaticProps = async () => {
@@ -49,8 +50,9 @@ export const getStaticProps = async () => {
     const allContents = await api.content.data.getAllByStatus(contentsStatus.published);
 
     const contents = (categories || []).map(c => (allContents || []).find(a => c.id === a.id));
+    const destaks = contents.map(c => ({...(c.data || [])[0], category: c.id})).filter(c => c)
 
-    return { props: { contents, categories }, revalidate: 1 };
+    return { props: { contents, categories, destaks }, revalidate: 1 };
 }
 
 export default withTranslation("common")(Home);

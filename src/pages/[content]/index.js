@@ -19,6 +19,7 @@ import social from "@/features/me/constants/social";
 import contentsStatus from "@/constants/contentsStatus";
 import UserProfile from "@/features/profile/components/UserProfile";
 import styles from "@/constants/styles";
+import authors from "@/constants/authors";
 
 const Contents = ({ content, categories }) => {
     const router = useRouter();
@@ -28,6 +29,8 @@ const Contents = ({ content, categories }) => {
 	if (!content || !content.id)
 		return <Error categories={categories} />
 
+    const author = authors[content.id];
+
     return (
         <Fragment>
 			<MetaHeader meta={routes.content.meta} content={content} />
@@ -35,9 +38,9 @@ const Contents = ({ content, categories }) => {
 
             <Section first tight colored={styles.tertiary_color}>
                 <UserProfile
-                    name="Israel Moreira"
-                    description="Metalúrgico por Profissão, um eterno aluno das Ciências Sociais e apaixonado por rádio 📻"
-                    photo="https://firebasestorage.googleapis.com/v0/b/clubestas.appspot.com/o/autores%2FWhatsApp%20Image%202022-03-01%20at%2022.35.05.jpeg?alt=media&token=d66ff817-3040-4bb8-9b26-f685f3c7688e"
+                    name={author.name}
+                    description={author.description}
+                    photo={author.img}
                 />
             </Section>
 
