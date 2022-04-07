@@ -28,7 +28,9 @@ const About = ({ className, t, categories }) => {
 				<div className={className}>
 					<div>
 						<h5>{t("about.title")}</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur porttitor erat ut tincidunt. Nam velit orci, aliquet eu tempor a, porttitor mattis lectus. Fusce et urna luctus, ultrices purus id, imperdiet erat. Suspendisse fringilla varius nunc eget luctus. Donec elementum imperdiet est et gravida. Duis ut pulvinar ligula. Sed ullamcorper neque elit, nec lacinia quam tempor nec. Nullam mollis pharetra ullamcorper. Nam vel neque sit amet justo volutpat tincidunt. Etiam egestas varius nibh eget dapibus. Curabitur finibus urna lacus, quis volutpat odio vestibulum eget. Quisque sit amet augue nisi. Proin malesuada finibus nunc, a eleifend sem dictum eu.</p>
+                        <p>Um portal de opinião, criado por quatro campineiros, ponte-pretanos e bugrinos, de conteúdo lírico e popular.</p>
+                        <p>"Do que é nosso para os nossos", esse é o lema do portal que estreia em 2022. Uma alternativa de leitura para à nossa gente, com a linguagem fácil e dinâmica.</p>
+                        <p>Nas Quatros Linha, um opção de conhecimento!</p>
                         <h4>Escritores</h4>
                         <div className="profiles">
                             {Object.keys(authors).map(a => (
@@ -107,6 +109,7 @@ export default withTranslation("common")(styled(About)`
         flex-wrap: wrap;
 
         & > * {
+            min-width: 250px;
             color: ${styles.tertiary_color};
             margin: 40px auto;
         }

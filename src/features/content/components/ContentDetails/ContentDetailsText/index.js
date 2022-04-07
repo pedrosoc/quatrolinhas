@@ -9,9 +9,11 @@ import styles from "@/constants/styles";
 import urls from "@/constants/urls";
 
 import { formatDate } from "@/utils/date";
+import authors from "@/constants/authors";
 
 const ContentDetailsText = ({ className, post }) => {
     const time = post.publicationTime ? post.publicationTime : post.created;
+    const author = post.author ? post.author : authors[post.category].name;
 
     return (
         <div className={className}>
@@ -20,7 +22,7 @@ const ContentDetailsText = ({ className, post }) => {
                 <span>{post.description}</span>
                 <div className="extraContainer">
                     <div className="authorContainer">
-                        <span className="author">Por {post.author}</span>
+                        <span className="author">Por {author}</span>
                         <div>Publicado em {formatDate(new Date(time))}</div>
                     </div>
                     <div className="shareContainer">
