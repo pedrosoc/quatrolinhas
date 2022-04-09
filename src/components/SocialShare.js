@@ -20,13 +20,13 @@ const SocialShare = ({ url, title, iconSize }) => {
 	
 	return (
 		<Fragment>
-			<FacebookShareButton url={url} quote={`${title} - @quatrolinhas`}>
+			<FacebookShareButton url={url} quote={`${title}`}>
                 <FacebookIcon size={iconSize} round />
             </FacebookShareButton>
             <TelegramShareButton url={url} title={title}>
                 <TelegramIcon size={iconSize} round />
             </TelegramShareButton>
-            <TwitterShareButton url={url} title={`${title} - @quatrolinhas`} related={["@quatrolinhas"]}>
+            <TwitterShareButton url={url} title={`${title}`}>
                 <TwitterIcon size={iconSize} round />
             </TwitterShareButton>
             <WhatsappShareButton url={url} title={title}>
