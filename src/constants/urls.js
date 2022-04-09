@@ -1,9 +1,9 @@
 const urls = {
     website: {
-        baseUrl: "https://quatrolinhas.vercel.app"
+        baseUrl: "https://nasquatrolinhas.com.br"
     },
     gallery: {
-        baseUrl: "https://firebasestorage.googleapis.com/v0/b/clubestas.appspot.com/o"
+        baseUrl: "https://firebasestorage.googleapis.com/v0/b/linhas-fdfd6.appspot.com/o"
     }
 };
 
