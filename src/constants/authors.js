@@ -6,7 +6,7 @@ export default {
     },
     "-MVgvlWlIqRqwm-HiDDa": {
         name: "Israel Moreira",
-        description: "Metalúrgico por Profissão, um eterno aluno das Ciências Sociais e apaixonado por rádio 📻",
+        description: "Radialista",
         img: "https://firebasestorage.googleapis.com/v0/b/linhas-fdfd6.appspot.com/o/autores%2FWhatsApp%20Image%202022-03-01%20at%2022.35.05.jpeg?alt=media&token=fe6ea818-e352-48c9-8a82-261e4524b238"
     },
     "-MxCTEaiepW66V7MDy0M": {

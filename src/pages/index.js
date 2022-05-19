@@ -18,6 +18,7 @@ import social from "@/features/me/constants/social";
 import contentsStatus from "@/constants/contentsStatus";
 import images from "@/constants/images";
 import styles from "@/constants/styles";
+import Partners from "@/features/me/components/Partners";
 
 const Home = ({ t, contents, categories, destaks }) => {
     return (
@@ -29,7 +30,11 @@ const Home = ({ t, contents, categories, destaks }) => {
 				<HomeBanner destaks={destaks} />
 			</Section>
 
-			<Section>
+            <Section tight>
+				<Partners />
+			</Section>
+
+			<Section first>
 				<FullContentResume contents={contents} />
 			</Section>
 
