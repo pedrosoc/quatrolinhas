@@ -4,7 +4,7 @@ import ReactGA from 'react-ga'
 
 export const initGA = () => {
     console.log('GA init')
-    ReactGA.initialize('UA-QUATRO LINHAS')
+    ReactGA.initialize('UA-156577109-1')
 }
 
 export const logPageView = () => {
